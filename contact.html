@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="site web fictif. Entreprise Pro Bricolo, Contact.">
+        <meta name="author" content="Sara Degrange">
+        <title>Pro Bricolo - Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+<body class="h-100 mw-100">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark text-white sticky-top" style="height: 10%;">
+            <div class="navbar-brand px-5 w-25">
+                <img src="images/hammer-28636_1280.png" alt="logo" style="width: 15%;">
+                <span class="ms-2">Pro Bricolo</span>
+            </div>
+            
+            <button class="navbar-toggler me-5" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-75 justify-content-end me-5" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="container">
+            <div class="row g-5 mt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-tittle h4">
+                                Nous contacter :
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    <i class="bi bi-phone p-2"></i><a href="tel:+">06-01-02-03-04</a>
+                                </p>
+                                <p>
+                                    <i class="bi bi-mailbox p-2"></i><a href="mailto:">probricolo@gmail.com</a>
+                                </p>
+                                <p>
+                                    <i class="bi bi-facebook p-2"></i><a href="http://">Pro Bricolo</a>
+                                </p>
+                                <p>
+                                    <i class="bi bi-pin-map p-2"></i> 1 rue des bricolos, 85 750 Angle, France
+                                </p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="">
+                        <!-- Map google (code générer automatiquement) -->
+                        <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=France%2085750&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer  class="bg-dark w-100 text-white text-end fixed-bottom p-2 pe-5" >
+        <p class="small text-end">© Pro Bricolo</p>
+     </footer> 
+</body>
+</html>
