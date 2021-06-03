@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site web fictif. Entreprise Pro Bricolo, À Propos.">
+    <meta name="author" content="Sara Degrange">
+    <title>Pro Bricolo - À Propos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="h-100 mw-100">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark w-100 text-white d-flex" style="height: 10%;">
+            <div class="navbar-brand px-5 w-25">
+                <img src="images/hammer-28636_1280.png" alt="logo" style="width: 15%;">
+                <span class="ms-2">Pro Bricolo</span>
+            </div>
+            
+            <button class="navbar-toggler me-5" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-75 justify-content-end me-5" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="a-propos.html" class="nav-link active">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="cartes m-5">
+        <div class="row g-5">
+            <div class="col-md-6">
+                <div class="card bg-info ">
+                    <div class="card-body">
+                        <img class="float-start m-2" src="images/blank-profile-picture-973460_1280.png" alt="">
+                        <div class="card-tittle h4">Nom : Philippe Martin </div>
+                        <div class="card-text">Études : Bac pro métiers de l’électricité et de ses environnements connectés <br>
+                        BTS Électrotechnique</div>
+                        <div class="card-text">Spécialité : éléctricité, boiserie</div>
+                        <div class="card-text">Qualités : minutieux, réactif</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-info">
+                    <div class="card-body text-end">
+                        <img class="float-end m-2" src="images/blank-profile-picture-973460_1280.png" alt="">
+                        <div class="card-tittle h4">Nom : François Dupont</div>
+                        <div class="card-text">Études : Bac pro technicien en installation des systèmes énergétiques et climatiques <br>
+                        BTS FED option génie climatique et fluidique</div>
+                        <div class="card-text">Spécialité : plomberie, carrelage</div>
+                        <div class="card-text">Qualités : organisé, rigoureux, persévérant</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interventions">
+        <div class="m-5">
+
+            <table class="table table-responsive table-bordered ">
+                <thead>
+                    <tr>
+                        <th colspan="2">Nous intervenons pour :</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eléctricité</td>
+                        <td>Pose et maintenance de système éléctrique <br>
+                        Diagnostic et mise aux normes</td>
+                    </tr>
+                    <tr>
+                        <td>Plomberie / chaufagerie</td>
+                        <td>Pose et maintenance de système sanitaire, de sytème de chauffage <br>
+                        Raccordement aux systèmes électriques et des canalisations au réseau d’eau <br>
+                        Diagnostic et mise aux normes </td>
+                    </tr>
+                    <tr>
+                        <td>Sols</td>
+                        <td>Pose de carrelage, de parquet</td>
+                    </tr>
+                    <tr>
+                        <td>Peintures</td>
+                        <td>Peintures interieurs / exterieurs, <br>
+                            papier peint</td>
+                    </tr>
+                    <tr>
+                        <td>Réparations</td>
+                        <td>Réparations d'appareils éléctroménager, <br>
+                        Réparations et maintanance d'appareils de motoculture <br>
+                        <i class="bi bi-exclamation-triangle"></i> Les réparations ce font uniquement sur des appareils hors garentie. 
+                        Si votre appareil est encore sous garentie, veuillez contacter le service client de la marque</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Autres</td>
+                        <td>Montage de meubles, <br>
+                            Fabrication diverse</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th colspan="2" class="text-center">Pour tout autres travaux veuillez nous contacter au <a href="tel:+">06-01-02-03-04</a>,
+                    pour savoir si nous pouvons vous aider !</th>
+                </tfoot>
+    
+            </table>
+        </div>
+    </section>
+    <footer  class="bg-dark w-100 text-white text-end mb-0 p-2" >
+        <p class="small text-end">© Pro Bricolo</p>
+     </footer>
+    
+</body>
+</html>
