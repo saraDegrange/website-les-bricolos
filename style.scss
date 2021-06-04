@@ -5,7 +5,7 @@
 }
 @media screen and (max-width: 350px) {
     .map{
-        width: 150px;
+        width: 15git0px;
         height: 50px;
     }
 }
@@ -28,5 +28,12 @@
         height: 400px;
     }
 }
+$theme-colors: (
+    "attention": #fe7283,
+    "primary": #9e9efe,
+    "second": #CFF4FC,
+);
 
 @import "node_modules/bootstrap/scss/bootstrap.scss"
+
+// problème avec le footer 
