@@ -31,7 +31,8 @@
                         <a href="a-propos.html" class="nav-link">À Propos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Galerie</a>
+                        <a href="#" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Page non disponnible">
+                            Galerie</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
@@ -47,7 +48,12 @@
         <div class="alert alert-info m-5 text-center">
             <p><i class="bi bi-exclamation-triangle"></i> <span class="text-decoration-underline">COVID-19 :</span> En raison de la crise sanitaire nous vous
             demandons de respecter les mesures barières en notre présence. A savoir respecter les 1 mètre de distanciation, 
-        ainsi que le port du masque. En cas de non respect nous nous reservont le droit de ne pas finir le chantier ! </p>
+            ainsi que le port du masque. En cas de non respect nous nous réservons le droit de ne pas finir le chantier ! </p>
+        </div>
+        <div class="alert alert-info m-5 text-center">
+            <p><i class="bi bi-exclamation-triangle"></i> 
+            Format de l'appareil non pris en charge, vous risquez
+            de rencontrez des problèmes d'affichage. </p>
         </div>
     </section>
     <div class="container my-5">
@@ -94,16 +100,16 @@
                                     <span class="card-tittle h4">Apprentis & Stagiaires</span>
                                     <img class="card-img ms-5 mb-1" src="images/wanted.png" alt="" style="width: 20%;">
                                     <div class="card-text ">
-                                        Dans le but de transmettre notre savoir faire, Pro Bricolos est à la recherche 
-                                        d'un apprentis en alternance. Si vous êtes intéresser, merci de nous transmettre
-                                        votre cv ainsi que votre lettre de motivation a l'adressse mail suivante :
+                                        Dans le but de transmettre notre savoir faire, Pro Bricolo est à la recherche 
+                                        d'un apprentis en alternance. Si vous êtes intéressé, merci de nous transmettre
+                                        votre cv ainsi que votre lettre de motivation à l'adressse mail suivante :
                                         <a href="mailto:">probricolo@gmail.com</a>
                                     </div>
                                 </div>
                                 <div class="card-footer">
                                     <div class="card-text">
-                                        Nous acceptons également les stagiaires, 1 seul stagiaire est accepter par 
-                                        période afin de pouvoir encadrer le stagiaire !
+                                        Nous acceptons également les stagiaires, 1 seul stagiaire est accepté par 
+                                        période afin de pouvoir encadrer le stagiaire au mieux !
                                     </div>
 
                                 </div>
@@ -118,5 +124,11 @@
        <p class="small text-end">© Pro Bricolo</p>
     </footer>
     
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 </html>

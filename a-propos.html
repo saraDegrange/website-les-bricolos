@@ -31,7 +31,8 @@
                         <a href="a-propos.html" class="nav-link active">À Propos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Galerie</a>
+                        <a href="#" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Page non disponnible">
+                            Galerie</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
@@ -40,6 +41,14 @@
             </div>
         </nav>
     </header>
+    <section>
+        <div class="m-5 text-center">
+            <p>Pro Bricolo, créer en 2020, par 2 artisans passionnés par le bricolage. Nous intervenons à votre domicile, pour 
+            vous libérer de toutes les petites tâches de Bricolage que vous ne pouvez ou n'aimez pas faire. Lorem ipsum 
+            dolor sit amet, consectetur adipiscing elit. Ut vestibulum condimentum quam et fermentum.
+            </p>
+        </div>
+    </section>
     <section class="cartes m-5">
         <div class="row g-5">
             <div class="col-md-6">
@@ -84,7 +93,7 @@
                         Diagnostic et mise aux normes</td>
                     </tr>
                     <tr>
-                        <td>Plomberie / chaufagerie</td>
+                        <td>Plomberie / chauffagerie</td>
                         <td>Pose et maintenance de système sanitaire, de sytème de chauffage <br>
                         Raccordement aux systèmes électriques et des canalisations au réseau d’eau <br>
                         Diagnostic et mise aux normes </td>
@@ -95,29 +104,25 @@
                     </tr>
                     <tr>
                         <td>Peintures</td>
-                        <td>Peintures interieurs / exterieurs, <br>
+                        <td>Peintures interieures / exterieures <br>
                             papier peint</td>
                     </tr>
                     <tr>
                         <td>Réparations</td>
-                        <td>Réparations d'appareils éléctroménager, <br>
-                        Réparations et maintanance d'appareils de motoculture <br>
-                        <i class="bi bi-exclamation-triangle"></i> Les réparations ce font uniquement sur des appareils hors garentie. 
-                        Si votre appareil est encore sous garentie, veuillez contacter le service client de la marque</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
+                        <td>Réparations d'appareil éléctroménager <br>
+                        Réparations et maintenance d'appareil de jardinage <br>
+                        <i class="bi bi-exclamation-triangle"></i> Les réparations ce font uniquement sur des appareils hors garantie. 
+                        Si votre appareil est encore sous garantie, veuillez contacter le service client de la marque</td>
                     </tr>
                     <tr>
                         <td>Autres</td>
-                        <td>Montage de meubles, <br>
+                        <td>Montage de meuble <br>
                             Fabrication diverse</td>
                     </tr>
                 </tbody>
                 <tfoot>
-                    <th colspan="2" class="text-center">Pour tout autres travaux veuillez nous contacter au <a href="tel:+">06-01-02-03-04</a>,
-                    pour savoir si nous pouvons vous aider !</th>
+                    <th colspan="2" class="text-center">Pour tous autres travaux veuillez nous contacter au <a href="tel:+">06-01-02-03-04</a>,
+                    pour savoir si nous pouvons réalisez ces travaux !</th>
                 </tfoot>
     
             </table>
@@ -127,5 +132,11 @@
         <p class="small text-end">© Pro Bricolo</p>
      </footer>
     
+     <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 </html>
