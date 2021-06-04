@@ -1,0 +1,32 @@
+@media screen and (min-width:300px) and (max-width: 1600px) {
+    .format{
+        display: none;
+    }
+}
+@media screen and (max-width: 350px) {
+    .map{
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .map{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .map{
+        width: 800px;
+        height: 600px;
+    }
+}
+@media screen and (min-width:500px) and (max-width: 1000px) {
+    .map{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@import "node_modules/bootstrap/scss/bootstrap.scss"
